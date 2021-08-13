@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="first" prefHeight="790.0" prefWidth="1222.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsulteController">
+   <children>
+      <StackPane fx:id="rot" prefHeight="790.0" prefWidth="1222.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefViewportHeight="704.0" prefViewportWidth="1006.0">
+               <content>
+                  <AnchorPane id="AnchorPane" fx:id="root" prefHeight="790.0" prefWidth="1219.0" styleClass="mainFxmlClass">
+                      <stylesheets>
+                          <URL value="@/style/consulte.css" />
+                      </stylesheets>
+                     <children>
+                        <AnchorPane layoutX="180.0" layoutY="269.0" prefHeight="251.0" prefWidth="281.0" style="-fx-background-color: gray;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                        <Label layoutX="646.0" layoutY="348.0" prefHeight="21.0" prefWidth="212.0" text="Label">
+                           <font>
+                              <Font name="Lato Bold" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+      <Pane style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="logo" fitHeight="119.0" fitWidth="481.0" layoutX="296.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutY="103.0" prefHeight="4.0" prefWidth="1222.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

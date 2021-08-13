@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="656.0" prefWidth="1086.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EnregistrementController">
+    <stylesheets>
+        <URL value="@/style/enregistrement.css" />
+    </stylesheets>
+   <children>
+        <TableView fx:id="table" layoutX="14.0" layoutY="103.0" prefHeight="553.0" prefWidth="872.0">
+           <columns>
+             <TableColumn fx:id="colNum" prefWidth="75.0" text="N°" />
+             <TableColumn fx:id="colRef" prefWidth="108.0" text="N° Ref" />
+               <TableColumn fx:id="colCode" prefWidth="108.0" text=" Code" />
+               <TableColumn fx:id="colMarque" prefWidth="96.0" text="Marque" />
+               <TableColumn fx:id="colType" prefWidth="118.0" text="Type" />
+               <TableColumn fx:id="colEtat" prefWidth="107.0" text="Etat" />
+               <TableColumn fx:id="colDirection" prefWidth="121.0" text="Direction" />
+               <TableColumn fx:id="coldate" prefWidth="134.0" text="Date" />
+           </columns>
+         </TableView>
+         <JFXButton fx:id="btnAdd" layoutX="910.0" layoutY="328.0" onAction="#onAdd" prefHeight="48.0" prefWidth="124.0" style="-fx-background-color: #082b42;" text="Nouveau" textFill="WHITE" />
+         <JFXButton fx:id="btnMod" layoutX="910.0" layoutY="407.0" onAction="#onMod" prefHeight="48.0" prefWidth="124.0" style="-fx-background-color: ecff1f;" text="Modifier" />
+         <JFXButton fx:id="btnDelete" layoutX="910.0" layoutY="478.0" onAction="#onDelete" prefHeight="48.0" prefWidth="124.0" style="-fx-background-color: b8281d;" text="Supprimer" textFill="WHITE" />
+         <TextField fx:id="t_search" layoutX="596.0" layoutY="61.0" onKeyReleased="#onChangeSearches" />
+         <JFXButton fx:id="btnSearch" layoutX="783.0" layoutY="61.0" onAction="#onSearch" style="-fx-border-color: #082b42;" text="Rechercher" />
+         <ComboBox fx:id="cmbFilter" layoutX="427.0" layoutY="61.0" prefWidth="150.0" />
+      <JFXButton fx:id="btnprint" layoutX="910.0" layoutY="550.0" onAction="#onDelete" prefHeight="48.0" prefWidth="124.0" style="-fx-background-color: #1e6523;" text="Imprimer" textFill="WHITE" />
+      <ComboBox fx:id="cmbMonth" layoutX="243.0" layoutY="61.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

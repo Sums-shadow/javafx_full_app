@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.rot{
+    -fx-shape: "M 0 350 C 200 250 450 500 800 200 L 800 600 L 0 600 L 0 350 ";
+    -fx-background-color: #e0e0e0;
+    -fx-opacity: 0.4;
+}

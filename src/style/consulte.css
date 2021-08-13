@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.roro{ 
+    -fx-background-color:#e0e0e0;
+    -fx-shape:"M 0 350 C 650 600 450 0 800 200 L 800 600 L 0 600 L 0 350 ";
+   
+}

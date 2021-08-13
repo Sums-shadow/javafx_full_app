@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="699.0" prefWidth="1114.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.LoginController">
+    <stylesheets>
+        <URL value="@/style/login.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="-1.0" prefHeight="699.0" prefWidth="1114.0" styleClass="root">
+         <children>
+            <HBox prefHeight="699.0" prefWidth="1114.0">
+               <children>
+                  <AnchorPane prefHeight="669.0" prefWidth="541.0" style="-fx-background-color: #0381cb;">
+                     <children>
+                        <ImageView fx:id="ilogo" fitHeight="182.0" fitWidth="372.0" layoutX="68.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+                  <Pane fx:id="p2" prefHeight="697.0" prefWidth="571.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <ImageView fx:id="ichart" fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+                        <JFXTextField fx:id="t_user" layoutX="125.0" layoutY="273.0" prefHeight="29.0" prefWidth="285.0" promptText="Nom d'utilisateur" />
+                        <JFXTextField fx:id="t_pass" layoutX="125.0" layoutY="363.0" prefHeight="29.0" prefWidth="285.0" promptText="Mot de passe" />
+                        <JFXButton fx:id="btnLogin" layoutX="203.0" layoutY="453.0" onAction="#onLogin" prefHeight="47.0" prefWidth="125.0" style="-fx-background-color: #0381cb;" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fx:id="iuser" fitHeight="53.0" fitWidth="61.0" layoutX="64.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="ipass" fitHeight="53.0" fitWidth="61.0" layoutX="64.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" />
+                        <Circle fx:id="cicle" fill="#ff1f1f" layoutX="534.0" layoutY="670.0" radius="15.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Circle>
+                        <ImageView fx:id="iloading" fitHeight="150.0" fitWidth="200.0" layoutX="193.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

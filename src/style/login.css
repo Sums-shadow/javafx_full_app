@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.root{
+   -fx-background-color: #e9e9e9;
+   -fx-shape: "M 0 300 C 250 200 450 450 800 100 L 800 600 L 0 600 L 0 300 ";
+}
+
+.jfx-snackbar-content {
+  -fx-background-color: #323232;
+}
+.jfx-snackbar-toast {
+  -fx-text-fill: WHITE;
+}

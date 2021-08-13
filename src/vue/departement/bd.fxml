@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.departement.BdController">
+ <stylesheets>
+                  <URL value="@/style/enregistrement.css" />
+               </stylesheets>  
+               <children>
+      <StackPane fx:id="root">
+         <children>
+            <AnchorPane id="AnchorPane" fx:id="rot" prefHeight="702.0" prefWidth="1086.0" styleClass="mainFxmlClass">
+               <children>
+                  <TableView fx:id="table" layoutX="15.0" layoutY="135.0" prefHeight="553.0" prefWidth="1056.0">
+                     <columns>
+                        <TableColumn fx:id="colNum" prefWidth="75.0" text="N°" />
+                        <TableColumn fx:id="colRef" prefWidth="108.0" text="N° Ref" />
+                        <TableColumn fx:id="colCode" prefWidth="108.0" text=" Code" />
+                        <TableColumn fx:id="colMarque" prefWidth="96.0" text="Marque" />
+                        <TableColumn fx:id="colType" prefWidth="118.0" text="Type" />
+                        <TableColumn fx:id="colEtat" prefWidth="107.0" text="Etat" />
+                        <TableColumn fx:id="colbailleur" prefWidth="134.0" text="Bailleur" />
+                        <TableColumn fx:id="coluser" prefWidth="134.0" text="Utilisateur" />
+                        <TableColumn fx:id="coldate" prefWidth="175.0" text="Date" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="t_search" layoutX="597.0" layoutY="93.0" onKeyReleased="#onChangeSearches" />
+                  <JFXButton fx:id="btnSearch" layoutX="784.0" layoutY="93.0" onAction="#onSearch" style="-fx-border-color: #082b42;" text="Rechercher" />
+                  <ComboBox fx:id="cmbFilter" layoutX="428.0" layoutY="93.0" prefWidth="150.0" />
+                  <Separator layoutY="78.0" prefHeight="10.0" prefWidth="1086.0" />
+                  <Text layoutX="474.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BD" wrappingWidth="58.6708984375">
+                     <font>
+                        <Font name="Consolas Bold" size="53.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="iback" fitHeight="59.0" fitWidth="96.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#onReturn" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

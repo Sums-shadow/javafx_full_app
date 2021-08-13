@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="665.0" style="-fx-background-color: #e0e0e0; -fx-border-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DelMaterielController">
+    <stylesheets>
+        <URL value="@/style/delmateriel.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="iquestion" fitHeight="150.0" fitWidth="200.0" layoutX="233.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="36.0" layoutY="239.0" text="Voulez vous réellement supprimer ce materiel?">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="284.0" text="Attention! cette action est irréversible">
+         <font>
+            <Font name="Comic Sans MS Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDelete" layoutX="164.0" layoutY="400.0" onAction="#onDelete" onMouseEntered="#hoverConfirm" onMouseExited="#notHover" prefHeight="56.0" prefWidth="115.0" style="-fx-background-color: #082b42;" text="Je confirme" textFill="WHITE" />
+      <JFXButton fx:id="btnCancel" layoutX="353.0" layoutY="400.0" onAction="#onCancel" onMouseEntered="#hoverExit" onMouseExited="#notHover" prefHeight="56.0" prefWidth="115.0" style="-fx-background-color: b8281d;" text="Annuler" textFill="WHITE" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

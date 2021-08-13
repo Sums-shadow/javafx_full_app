@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.jfx-snackbar-content {
+  -fx-background-color: #323232;
+}
+.jfx-snackbar-toast {
+  -fx-text-fill: WHITE;
+}

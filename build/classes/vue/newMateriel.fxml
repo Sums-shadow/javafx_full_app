@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="935.0" prefWidth="724.0" style="-fx-background-color: #f6f6f6;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewMaterielController">
+    <stylesheets>
+        <URL value="@/style/newmateriel.css" />
+    </stylesheets>
+   <children>
+      <JFXButton fx:id="btnSave" layoutX="138.0" layoutY="736.0" onAction="#onSave" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #082b42;" text="Sauvegarder" textFill="WHITE" />
+      <JFXButton fx:id="btncancel" layoutX="413.0" layoutY="736.0" onAction="#onCancel" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #b8281d;" text="Annuler" textFill="WHITE" />
+      <Pane layoutX="51.0" layoutY="218.0" prefHeight="475.0" prefWidth="600.0" style="-fx-background-color: #ececec;">
+         <children>
+            <JFXTextField fx:id="t_code" layoutX="51.0" layoutY="78.0" prefHeight="29.0" prefWidth="221.0" promptText="code" />
+            <JFXTextField fx:id="t_marque" layoutX="328.0" layoutY="76.0" prefHeight="29.0" prefWidth="221.0" promptText="Marque" />
+            <JFXComboBox fx:id="t_etat" layoutX="51.0" layoutY="144.0" prefHeight="31.0" prefWidth="221.0" promptText="Etat" />
+            <JFXComboBox fx:id="t_departement" layoutX="329.0" layoutY="144.0" prefHeight="31.0" prefWidth="221.0" promptText="Departement" />
+            <DatePicker fx:id="t_date" layoutX="53.0" layoutY="223.0" promptText="Date Acquisition" />
+            <JFXTextField fx:id="t_bailleur" layoutX="322.0" layoutY="224.0" prefHeight="29.0" prefWidth="221.0" promptText="Bailleur" />
+            <JFXTextField fx:id="t_type" layoutX="51.0" layoutY="296.0" prefHeight="29.0" prefWidth="221.0" promptText="Type Materiel" />
+            <JFXTextField fx:id="t_montant" layoutX="329.0" layoutY="296.0" prefHeight="29.0" prefWidth="221.0" promptText="Motant" />
+            <JFXTextField fx:id="t_nomuser" layoutX="51.0" layoutY="370.0" prefHeight="29.0" prefWidth="221.0" promptText="Nom Employé" />
+            <JFXTextField fx:id="t_fonctionuser" layoutX="322.0" layoutY="370.0" prefHeight="29.0" prefWidth="221.0" promptText="Fonction Employé" />
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <ImageView fx:id="isave" fitHeight="169.0" fitWidth="273.0" layoutX="186.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
